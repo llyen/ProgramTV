@@ -19,7 +19,7 @@ class Settings {
     }
     
     private function parse(){
-        
+        $this->params = parse_ini_file($this->path, true);
     }
     
 }
