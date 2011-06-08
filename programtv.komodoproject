@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Komodo Project File - DO NOT EDIT -->
+<project id="1fc79759-4838-4001-91b0-8395c3ae1933" kpf_version="5" name="programtv.komodoproject">
+<preference-set idref="1fc79759-4838-4001-91b0-8395c3ae1933">
+  <boolean id="import_live">1</boolean>
+</preference-set>
+</project>
