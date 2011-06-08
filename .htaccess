@@ -1,0 +1,4 @@
+#Options FollowSymLink
+RewriteEngine On
+RewriteBase /programtv/
+RewriteRule ^(.*).html$ index.php?r=$1 [L]
