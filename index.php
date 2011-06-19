@@ -1,10 +1,11 @@
 <?php
-error_reporting(E_ALL | E_STRICT);
+session_start();
 ob_start();
 
 require_once 'system/class.settings.php';
 require_once 'system/class.database.php';
 require_once 'system/class.router.php';
+require_once 'system/class.user.php';
 require_once 'system/abstract.class.element.php';
 require_once 'system/class.item.php';
 require_once 'system/routes.php';
