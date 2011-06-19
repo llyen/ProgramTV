@@ -6,4 +6,8 @@ class Item extends Element {
     
     public function removeFromProgram(Program $program){}
     
+    public function viewForm(){
+        Router::redirect('test', array('param'));
+    }
+    
 }
