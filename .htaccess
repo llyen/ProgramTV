@@ -1,4 +1,5 @@
 #Options FollowSymLink
 RewriteEngine On
 RewriteBase /programtv/
+#RewriteRule ^admin/(.*).html$ index.php?r=admin&m=$1 [L]
 RewriteRule ^(.*).html$ index.php?r=$1 [L]

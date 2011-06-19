@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(E_ALL | E_STRICT);
 ob_start();
 
 require_once 'system/class.settings.php';
