@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Czas wygenerowania: 19 Cze 2011, 21:24
+-- Czas wygenerowania: 19 Cze 2011, 23:17
 -- Wersja serwera: 5.0.51
 -- Wersja PHP: 5.2.6
 
@@ -31,6 +31,11 @@ CREATE TABLE IF NOT EXISTS `category` (
   PRIMARY KEY  (`category_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=1 ;
 
+--
+-- Zrzut danych tabeli `category`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -43,6 +48,11 @@ CREATE TABLE IF NOT EXISTS `channel` (
   `channel_description` text collate utf8_polish_ci,
   PRIMARY KEY  (`channel_id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci AUTO_INCREMENT=1 ;
+
+--
+-- Zrzut danych tabeli `channel`
+--
+
 
 -- --------------------------------------------------------
 
@@ -65,6 +75,11 @@ CREATE TABLE IF NOT EXISTS `item` (
 --       `category` -> `category_id`
 --
 
+--
+-- Zrzut danych tabeli `item`
+--
+
+
 -- --------------------------------------------------------
 
 --
@@ -84,3 +99,27 @@ CREATE TABLE IF NOT EXISTS `program` (
 --   `channel_id`
 --       `channel` -> `channel_id`
 --
+
+--
+-- Zrzut danych tabeli `program`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Struktura tabeli dla  `user`
+--
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `login` varchar(20) collate utf8_polish_ci NOT NULL,
+  `password` varchar(60) collate utf8_polish_ci NOT NULL,
+  PRIMARY KEY  (`login`,`password`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_polish_ci;
+
+--
+-- Zrzut danych tabeli `user`
+--
+
+INSERT INTO `user` (`login`, `password`) VALUES
+('admin', '90b9aa7e25f80cf4f64e990b78a9fc5ebd6cecad');
