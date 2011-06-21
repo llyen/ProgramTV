@@ -1,7 +1,8 @@
 <?php
 session_start();
 ob_start();
-
+error_reporting(E_ALL | E_STRICT);
+//print_r($_SERVER);
 require_once 'system/class.settings.php';
 require_once 'system/class.database.php';
 require_once 'system/class.router.php';
@@ -13,8 +14,6 @@ require_once 'system/routes.php';
 $settings = new Settings();
 $database = new Database($settings);
 //$item = new Item();
-
-
 ?>
 <!doctype html>
 <html>
