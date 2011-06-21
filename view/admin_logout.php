@@ -1,3 +1,3 @@
 <?php
 User::logout();
-Router::redirect('main');
+Router::redirect('admin');

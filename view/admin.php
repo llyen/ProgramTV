@@ -10,6 +10,9 @@ if($_SESSION['admin'] == 'true'){
     }
 }//else{
 ?>
+<div id="header">
+    <h2>ProgramTV :: Panel administracyjny</h2>
+</div>
 <?=$error;?>
 <form method="post" action="">
 login: <input type="text" name="login" /><br />
