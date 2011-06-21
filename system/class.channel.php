@@ -8,17 +8,17 @@ class Channel {
         $this->database = $database;
     }
     
-    public function add(){
-        
-    }
-    
-    public function edit($channelId){
-        Router::redirect('admin_channel_edit', $this->get($channelId));
-    }
-    
-    public function delete($channelId){
-        
-    }
+    //public function add(){
+    //    
+    //}
+    //
+    //public function edit($channelId){
+    //    Router::redirect('admin_channel_edit', $this->get($channelId));
+    //}
+    //
+    //public function delete($channelId){
+    //    
+    //}
     
     public function save($post){}
     
