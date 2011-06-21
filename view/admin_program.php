@@ -1,3 +1,6 @@
+<?php
+if($_SESSION['admin']!='true') Router::redirect('admin');
+?>
 <div id="header">
     <h2>ProgramTV :: Panel administracyjny :: Programy</h2>
     <div id="nav">
