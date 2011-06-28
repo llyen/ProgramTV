@@ -1,6 +1,6 @@
 <?php
 
-class Channel {
+class Channel implements Module {
     
     private $database;
     
@@ -37,16 +37,16 @@ class Channel {
         return false;
     }
     
-    public function remove($channelId){
-        $query = $this->database->prepare("delete from channel where channel_id=$channelId");
+    public function remove($id){
+        $query = $this->database->prepare("delete from channel where channel_id=$id");
         if($query->execute()){
             return true;
         }
         return false;
     }
     
-    public function get($channelId = ''){
-        $query = empty($channelId) ? $this->database->query("select channel_id, channel_name, channel_description from channel") :  $this->database->query("select channel_name, channel_description from channel where channel_id=$channelId");
+    public function get($id = ''){
+        $query = empty($id) ? $this->database->query("select channel_id, channel_name, channel_description from channel") :  $this->database->query("select channel_name, channel_description from channel where channel_id=$id");
         //$channel = $query->fetch();
         return $query;
     }
