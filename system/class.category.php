@@ -21,7 +21,7 @@ class Category implements Module {
     }
     
     public function update($post){
-        $categoryId = $_POST['category_id'];
+        $categoryId = $post['category_id'];
         $categoryName = htmlspecialchars($post['category_name']);
         $query = $this->database->prepare("update category set category_name=? where category_id=?");
         if($categoryName != '' && $query->execute(array($categoryName, $categoryId))) return true;

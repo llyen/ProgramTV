@@ -24,16 +24,16 @@ class Channel implements Module {
         $channelName = htmlspecialchars($post['channel_name']);
         $channelDescription = htmlspecialchars($post['channel_description']);
         $query = $this->database->prepare("insert into channel (channel_name, channel_description) values (?, ?)");
-        if($channelName != '' && $channelDescription != '' && $query->execute(array($channelName, $channelDescription))) return true;
+        if($channelName != '' && $query->execute(array($channelName, $channelDescription))) return true;
         return false;
     }
     
     public function update($post){
-        $channelId = $_POST['channel_id'];
+        $channelId = $post['channel_id'];
         $channelName = htmlspecialchars($post['channel_name']);
         $channelDescription = htmlspecialchars($post['channel_description']);
         $query = $this->database->prepare("update channel set channel_name=?, channel_description=? where channel_id=?");
-        if($channelName != '' && $channelDescription != '' && $query->execute(array($channelName, $channelDescription, $channelId))) return true;
+        if($channelName != '' && $query->execute(array($channelName, $channelDescription, $channelId))) return true;
         return false;
     }
     
