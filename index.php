@@ -1,7 +1,7 @@
 <?php
 session_start();
 ob_start();
-error_reporting(E_ALL | E_STRICT);
+//error_reporting(E_ALL | E_STRICT);
 //print_r($_SERVER);
 require_once 'system/class.settings.php';
 require_once 'system/class.database.php';
