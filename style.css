@@ -45,8 +45,20 @@ div#nav ul { list-style-type: none; }
 div#nav ul li { float: left; margin-right: 20px; background: #fff; width: 100px; height: 20px; text-align: center; }
 div#nav ul li a { text-decoration: none; color: #455ea8; font: bold 11px Verdana, sans-serif; }
 
+div#content .error { /*width: 300px;*/ background: #ffcdd1; border-bottom: 2px solid #e10c0c; border-top: 2px solid #e10c0c; color: #e10c0c; font: bold 11px Verdana, sans-serif; text-align: center; padding: 5px 0 5px 0; margin: 50px auto 0px auto; }
+div#content .info { /*width: 300px;*/ background: #aaf05b; border-bottom: 2px solid #4f8a10; border-top: 2px solid #4f8a10; color: #4f8a10; font: bold 11px Verdana, sans-serif; text-align: center; padding: 5px 0 5px 0; margin: 50px auto 0px auto; }
+
 div#content .form { width: 200px; margin: 100px auto; padding: 20px; border: 1px solid #455ea8; border-top: 10px solid #455ea8; font: normal 12px Verdana, sans-serif; }
 div#content .form .error { background: #ffcdd1; border-bottom: 2px solid #e10c0c; border-top: 2px solid #e10c0c; color: #e10c0c; font: bold 11px Verdana, sans-serif; text-align: center; padding: 5px 0 5px 0; margin-bottom: 10px; }
 div#content .form label { width: 50px; text-align: center; display: block; float: left; }
 div#content .form input { margin-bottom: 10px; }
 div#content .form input[type="submit"]{ margin-bottom: 0; margin-left: 130px; }
+
+div#content table { width: 650px; margin: 50px auto; /*padding: 5px;*/ border: 2px solid #455ea8; /*border-top: 10px solid #455ea8;*/ font: normal 13px Verdana, sans-serif; table-layout: fixed; }
+div#content table tr td { padding: 5px; }
+div#content table tr:first-child { background: #455ea8; color: #fff; }
+
+div#content table#add_channel { width: 450px; }
+div#content table#add_channel tr:nth-child(odd) { background: #455ea8; color: #fff; }
+div#content table#add_channel input[type="text"] { width: 200px; }
+div#content table#add_channel textarea { width: 430px; height: 200px; }

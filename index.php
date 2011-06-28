@@ -11,6 +11,9 @@ require_once 'system/abstract.class.element.php';
 require_once 'system/class.item.php';
 require_once 'system/routes.php';
 
+//autoloader?
+require_once 'system/class.channel.php';
+
 $settings = new Settings();
 $database = new Database($settings);
 //$item = new Item();
