@@ -28,9 +28,22 @@ class Channel {
         return false;
     }
     
-    public function update($channelId, $post){}
+    public function update($post){
+        $channelId = $_POST['channel_id'];
+        $channelName = htmlspecialchars($post['channel_name']);
+        $channelDescription = htmlspecialchars($post['channel_description']);
+        $query = $this->database->prepare("update channel set channel_name=?, channel_description=? where channel_id=?");
+        if($channelName != '' && $channelDescription != '' && $query->execute(array($channelName, $channelDescription, $channelId))) return true;
+        return false;
+    }
     
-    public function remove($channelId){}
+    public function remove($channelId){
+        $query = $this->database->prepare("delete from channel where channel_id=$channelId");
+        if($query->execute()){
+            return true;
+        }
+        return false;
+    }
     
     public function get($channelId = ''){
         $query = empty($channelId) ? $this->database->query("select channel_id, channel_name, channel_description from channel") :  $this->database->query("select channel_name, channel_description from channel where channel_id=$channelId");

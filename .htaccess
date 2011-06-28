@@ -8,4 +8,5 @@ RewriteBase /programtv/
 #RewriteRule \.(js|ico|gif|jpg|png|css)$ - [L]
 #RewriteRule ^admin/(.*).html$ index.php?r=admin&m=$1 [L]
 #RewriteRule ^index\.php/test/(.*)/(.*)$ index.php?r=test&a=$1&b=$2 [L]
-RewriteRule ^index\.php/(.*)$ index.php?r=$1 [L]
+RewriteRule ^index\.php\/(.*)\/(\d+)$ index.php?r=$1&id=$2 [L]
+RewriteRule ^index\.php\/(.*)$ index.php?r=$1 [L]

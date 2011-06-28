@@ -58,7 +58,7 @@ div#content table { width: 650px; margin: 50px auto; /*padding: 5px;*/ border: 2
 div#content table tr td { padding: 5px; }
 div#content table tr:first-child { background: #455ea8; color: #fff; }
 
-div#content table#add_channel { width: 450px; }
-div#content table#add_channel tr:nth-child(odd) { background: #455ea8; color: #fff; }
-div#content table#add_channel input[type="text"] { width: 200px; }
-div#content table#add_channel textarea { width: 430px; height: 200px; }
+div#content table#channel { width: 450px; }
+div#content table#channel tr:nth-child(odd) { background: #455ea8; color: #fff; }
+div#content table#channel input[type="text"] { width: 200px; }
+div#content table#channel textarea { width: 430px; height: 200px; }
