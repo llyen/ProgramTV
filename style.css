@@ -44,3 +44,9 @@ div#nav { /*background: #fff;*/ width: 800px; height: 20px; margin-left: 30px; }
 div#nav ul { list-style-type: none; }
 div#nav ul li { float: left; margin-right: 20px; background: #fff; width: 100px; height: 20px; text-align: center; }
 div#nav ul li a { text-decoration: none; color: #455ea8; font: bold 11px Verdana, sans-serif; }
+
+div#content .form { width: 200px; margin: 100px auto; padding: 20px; border: 1px solid #455ea8; border-top: 10px solid #455ea8; font: normal 12px Verdana, sans-serif; }
+div#content .form .error { background: #ffcdd1; border-bottom: 2px solid #e10c0c; border-top: 2px solid #e10c0c; color: #e10c0c; font: bold 11px Verdana, sans-serif; text-align: center; padding: 5px 0 5px 0; margin-bottom: 10px; }
+div#content .form label { width: 50px; text-align: center; display: block; float: left; }
+div#content .form input { margin-bottom: 10px; }
+div#content .form input[type="submit"]{ margin-bottom: 0; margin-left: 130px; }

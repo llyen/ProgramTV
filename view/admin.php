@@ -13,12 +13,18 @@ if($_SESSION['admin'] == 'true'){
 <div id="header">
     <h2>ProgramTV :: Panel administracyjny</h2>
 </div>
-<?=$error;?>
-<form method="post" action="">
-login: <input type="text" name="login" /><br />
-hasło: <input type="password" name="password" /><br />
-<input type="submit" value="zaloguj" />
-</form>
+<div id="content">
+<div class="form">
+    <div class="error">
+        <?=$error;?>
+    </div>
+    <form method="post" action="">
+        <label for="login">login:</label><input id="login" type="text" name="login" /><br />
+        <label for="password">hasło:</label><input id="password" type="password" name="password" /><br />
+        <input type="submit" value="zaloguj" />
+    </form>
+</div>
+</div>
 <?php
 //}
 ?>
