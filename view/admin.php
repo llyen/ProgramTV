@@ -15,9 +15,11 @@ if($_SESSION['admin'] == 'true'){
 </div>
 <div id="content">
 <div class="form">
+    <?php if($error!=''): ?>
     <div class="error">
         <?=$error;?>
     </div>
+    <?php endif; ?>
     <form method="post" action="">
         <label for="login">login:</label><input id="login" type="text" name="login" /><br />
         <label for="password">hasło:</label><input id="password" type="password" name="password" /><br />
