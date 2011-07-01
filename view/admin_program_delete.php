@@ -1,21 +1,20 @@
 <?php
 if($_SESSION['admin']!='true') Router::redirect('admin');
 
-$item = new Item($database);
-$itemId = $_GET['id'];
-if($item->remove($itemId)){
+$program = new Program($database);
+$programId = $_GET['id'];
+if($program->remove($programId)){
     $result = '<div class="info">Operacja zakończyła się powodzeniem.</div>';
 }else{
     $result = '<div class="error">Nie udało się dodać nowego kanału.</div>';
 }
 ?>
 <div id="header">
-    <h2>ProgramTV :: Panel administracyjny :: Pozycje :: Usuń</h2>
+    <h2>ProgramTV :: Panel administracyjny :: Program :: Usuń</h2>
     <div id="nav">
         <ul>
             <li><a href="<?php echo Router::uri('admin_panel');?>">&laquo; Wstecz</a></li>
-            <li><a href="<?php echo Router::uri('admin_item');?>">Wyświetl</a></li>
-            <li><a href="<?php echo Router::uri('admin_item_add');?>">Dodaj</a></li>
+            <li><a href="<?php echo Router::uri('admin_program');?>">Wyświetl</a></li>
         </ul>
     </div>
 </div>

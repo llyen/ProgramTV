@@ -10,7 +10,6 @@ require_once 'system/class.user.php';
 require_once 'system/routes.php';
 require_once 'system/interface.module.php';
 
-//autoloader?
 require_once 'system/class.channel.php';
 require_once 'system/class.category.php';
 require_once 'system/class.item.php';
