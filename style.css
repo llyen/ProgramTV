@@ -54,11 +54,36 @@ div#content .form label { width: 50px; text-align: center; display: block; float
 div#content .form input { margin-bottom: 10px; }
 div#content .form input[type="submit"]{ margin-bottom: 0; margin-left: 130px; }
 
-div#content table { width: 650px; margin: 50px auto; /*padding: 5px;*/ border: 2px solid #455ea8; /*border-top: 10px solid #455ea8;*/ font: normal 13px Verdana, sans-serif; table-layout: fixed; }
-div#content table tr td { padding: 5px; }
-div#content table tr:first-child { background: #455ea8; color: #fff; }
+div#content table, div#content-main table { width: 650px; margin: 50px auto; /*padding: 5px;*/ border: 2px solid #455ea8; /*border-top: 10px solid #455ea8;*/ font: normal 13px Verdana, sans-serif; table-layout: fixed; }
+div#content table tr td, div#content-main table tr td { padding: 5px; }
+div#content table tr:first-child, div#content-main table tr:first-child { background: #455ea8; color: #fff; }
 
 div#content table#channel { width: 450px; }
 div#content table#channel tr:nth-child(odd) { background: #455ea8; color: #fff; }
 div#content table#channel input[type="text"] { width: 200px; }
 div#content table#channel textarea { width: 430px; height: 200px; }
+
+div#container-main { width: 650px; margin: 80px auto; background: #ededed; }
+
+div#header-main { width: 100%; height: 80px; background: #fff; }
+div#header-main h3 { font: normal 48px Georgia, serif; }
+div#header-main p { font: normal 13px Verdana, sans-serif; padding-top: 2px; }
+
+div#container-main #nav { width: 650px; margin-left: 0px; background: #455EA8; height: 30px; }
+div#container-main #nav li { background: none; margin-top: 5px; }
+div#container-main #nav li a { color: #fff; font: normal 13px Verdana, sans-serif; }
+
+div#content-main { padding: 10px; }
+div#content-main p { font: normal 14px Georgia; padding: 10px }
+div#content-main p.name { padding: 5px 0px 5px 10px; }
+div#content-main p.name a { text-decoration: none; color: #000; font: bold 13px Georgia, serif; }
+div#content-main p.desc { padding: 0px 0px 15px 10px; font: italic 12px Georgia, serif; text-align: justify; }
+div#content-main h3 { font: normal 24px Georgia, serif; margin-bottom: 15px; }
+
+div#content-main table { margin: 5px auto; table-layout: auto; }
+div#content-main table.program { width: 450px; }
+div#content-main table.program tr:nth-child(odd) { background: #455ea8; color: #fff; }
+
+div#container-main form { margin: 5px; font: 13px Verdana; border-bottom: 1px dashed; padding-bottom: 5px; }
+
+div#footer { font: normal 9px Tahoma; line-height: 1.5em; float: right; margin-top: 10px }
